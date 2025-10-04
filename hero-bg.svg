@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#052238"/>
+      <stop offset="1" stop-color="#083a59"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <g fill="none" stroke="#0b72c4" stroke-opacity="0.18" stroke-width="2">
+    <circle cx="300" cy="220" r="140"/>
+    <circle cx="1200" cy="700" r="200"/>
+    <path d="M100 800 C400 600, 800 600, 1200 400" stroke-linecap="round"/>
+  </g>
+  <g fill="#ffffff" fill-opacity="0.06">
+    <rect x="60" y="60" width="180" height="120" rx="8"/>
+    <rect x="420" y="120" width="260" height="160" rx="12"/>
+    <rect x="900" y="80" width="360" height="220" rx="14"/>
+  </g>
+  <text x="90%" y="90%" font-size="28" text-anchor="end" fill="#ffffff" fill-opacity="0.06">CloudInDigital</text>
+</svg>
