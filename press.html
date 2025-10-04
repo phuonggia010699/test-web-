@@ -1,54 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Press Releases — CloudInDigital</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Press | CloudInDigital</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand"><a href="index.html">CloudInDigital</a></div>
-      <nav class="main-nav" id="mainNav">
-        <a href="index.html">Home</a>
-        <a href="press.html">Press Releases</a>
-        <a href="statement.html">Statement</a>
-        <a href="contact.html">Contact</a>
+  <header class="navbar">
+    <div class="container">
+      <img src="img/logo.png" alt="CloudInDigital" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="press.html">News</a></li>
+          <li><a href="statement.html">Statement</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('mainNav').classList.toggle('open')">☰</button>
     </div>
   </header>
 
-  <main class="container content">
-    <h1>Press Releases</h1>
+  <section class="page-header">
+    <h1>Press & Updates</h1>
+  </section>
 
-    <article id="r1" class="press-item">
-      <h2>Urgent Proposal for Supporting the Dissolution of an Internet Registry</h2>
-      <p class="meta">Oct 4, 2025</p>
-      <p>This release outlines concerns about governance and suggests a set of actions for stakeholders to consider. It provides background, recommendations and proposed next steps.</p>
-    </article>
-
-    <article id="r2" class="press-item">
-      <h2>Statement on Responsible Cloud Practices</h2>
-      <p class="meta">Sep 20, 2025</p>
-      <p>CloudInDigital recommends best practices for providers and operators to increase transparency and accountability across cloud services.</p>
-    </article>
-
-    <article id="r3" class="press-item">
-      <h2>Cloud Innovation Fellowship Launch</h2>
-      <p class="meta">Aug 12, 2025</p>
-      <p>The fellowship program aims to support early-stage projects that combine cloud expertise with social good.</p>
-    </article>
-
-  </main>
-
-  <footer class="site-footer">
+  <section class="news">
     <div class="container">
-      <p>© 2025 CloudInDigital. All rights reserved.</p>
+      <article class="fade-in">
+        <h2>AI-Driven Cloud Innovation Expands Globally</h2>
+        <p>CloudInDigital continues its mission to empower organizations through scalable cloud-based solutions, AI integration, and innovation ecosystems.</p>
+      </article>
+
+      <article class="fade-in">
+        <h2>Partnership with FutureTech Labs</h2>
+        <p>A strategic partnership to accelerate digital transformation in emerging markets by integrating AI and sustainable technology.</p>
+      </article>
     </div>
+  </section>
+
+  <footer>
+    <p>© 2025 CloudInDigital. All Rights Reserved.</p>
   </footer>
+
   <script src="js/script.js"></script>
 </body>
 </html>
