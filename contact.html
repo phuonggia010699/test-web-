@@ -1,60 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — CloudInDigital</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | CloudInDigital</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand"><a href="index.html">CloudInDigital</a></div>
-      <nav class="main-nav" id="mainNav">
-        <a href="index.html">Home</a>
-        <a href="press.html">Press Releases</a>
-        <a href="statement.html">Statement</a>
-        <a href="contact.html">Contact</a>
+  <header class="navbar">
+    <div class="container">
+      <img src="img/logo.png" alt="CloudInDigital" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="press.html">News</a></li>
+          <li><a href="statement.html">Statement</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('mainNav').classList.toggle('open')">☰</button>
     </div>
   </header>
 
-  <main class="container content contact-page">
-    <h1>Media Contact</h1>
-    <p>If you are a member of the media or have inquiries, please use the form below or contact us directly.</p>
+  <section class="page-header">
+    <h1>Contact Us</h1>
+  </section>
 
-    <div class="contact-grid">
-      <form class="contact-form" action="mailto:media@cloudindigital.org" method="post" enctype="text/plain">
-        <label for="name">Name</label>
-        <input id="name" name="name" required>
+  <section class="contact-form">
+    <div class="container fade-in">
+      <form action="https://formspree.io/f/mjvgrqwr" method="POST">
+        <label>Your Name</label>
+        <input type="text" name="name" required>
 
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
+        <label>Your Email</label>
+        <input type="email" name="email" required>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
+        <label>Message</label>
+        <textarea name="message" rows="5" required></textarea>
 
         <button type="submit" class="btn">Send Message</button>
       </form>
-
-      <aside class="contact-info">
-        <h3>Contact Details</h3>
-        <p><strong>Address:</strong><br>123 Innovation Ave,<br>Bangkok, Thailand</p>
-        <p><strong>Email:</strong> <a href="mailto:media@cloudindigital.org">media@cloudindigital.org</a></p>
-        <p><strong>Phone:</strong> +66 2 1234 5678</p>
-        <h4>Follow us</h4>
-        <p><a href="#" aria-label="Twitter">Twitter</a> • <a href="#" aria-label="LinkedIn">LinkedIn</a></p>
-      </aside>
     </div>
-  </main>
+  </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 CloudInDigital. All rights reserved.</p>
-    </div>
+  <footer>
+    <p>© 2025 CloudInDigital. All Rights Reserved.</p>
   </footer>
+
   <script src="js/script.js"></script>
 </body>
 </html>
